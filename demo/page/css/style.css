@@ -1,0 +1,246 @@
+/* Global and clearfix style */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+body {
+	background: #e1dbc7 url(../images/content_bg.jpg) repeat 0 0;
+	color: #47443a;
+	font: 100%/1.5 Tahoma,Arial,"\5FAE\8F6F\96C5\9ED1",Sans-Serif;
+	min-height:100%;
+}
+
+a {
+	color: #307d34;
+	text-decoration: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+	outline:none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+p, div {
+	word-wrap: break-word;
+}
+
+dl, ul, ol {
+	list-style: none;
+}
+
+caption, th {
+	text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Times New Roman',Arial,'\5FAE\8F6F\96C5\9ED1',Sans-Serif;
+	font-weight: bold;
+}
+
+q, blockquote {
+	quotes: none;
+}
+
+q:before, q:after,
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+
+abbr, acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {vertical-align: text-top;}
+sub {vertical-align: text-bottom;}
+
+input, textarea, select, optgroup {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+select, input, button, textarea, optgroup {font: inherit;}
+
+.clearfix:after {
+	content: '.';
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	display:block;
+}
+.clearfix {display: inline-block;}
+.clearfix {display: block;}
+
+/* Header style */
+
+.header {
+	background: #ede8db url(../images/header.jpg) no-repeat center top;
+}
+
+.header-wrapper {
+	height: 330px;
+	margin: 0 auto;
+	position: relative;
+	width: 980px;
+}
+
+	/* Website Description */
+
+.site-sesc {
+	left: 0;
+	width: 270px;
+	position: absolute;
+	top: 26px;
+}
+
+.site-sesc h1 {
+	text-indent: -9999em;
+}
+
+.site-sesc h1 a {
+	background: url(../images/logo.png) no-repeat 0 0;
+	display: block;
+	height: 70px;
+	width: 270px;
+}
+
+.site-sesc span {
+	font-size: 12px;
+	font-weight: bold;
+	color: #307d34;
+}
+
+	/* Website Top Navigation*/
+
+.main-nav {
+	background: url(../images/nav_right.png) no-repeat right 18px;
+	float: right;
+	padding: 48px 2px 0 0;
+}
+
+.main-nav ul {
+	background: url(../images/nav_left.png) no-repeat left bottom;
+	height: 58px;
+	padding: 0 0 40px 91px;
+}
+
+.main-nav li {
+	float: left;
+	height: 100%;
+}
+
+.main-nav a {
+	background: url(../images/nav.png) no-repeat -20px 0;
+	color: #ffffff;
+	display: block;
+	line-height: 58px;
+	text-decoration: none;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+	background-position: -20px -59px;
+}
+
+.main-nav .first a {
+	background-position: 0 0;
+}
+
+.main-nav .first a:focus,
+.main-nav .first a:hover {
+	background-position: 0 -59px;
+}
+
+.main-nav .last a {
+	background-position: right top;
+}
+
+.main-nav .last a:focus,
+.main-nav .last a:hover {
+	background-position: right -59px;
+}
+
+.main-nav .first .selected {
+	background-position: 0 -59px;
+}
+
+.main-nav .last .selected {
+	background-position: right -59px;
+}
+
+.main-nav .selected {
+	background-position: -20px -59px;
+}
+
+.main-nav .selected span {
+	background-position: right -177px;
+}
+
+.main-nav a span {
+	background: url(../images/nav.png) no-repeat right -118px;
+	display: block;
+	font-style: italic;
+	padding: 0 45px;
+}
+
+.main-nav .last span {
+	background: none;
+}
+
+.main-nav a:focus span,
+.main-nav a:hover span {
+	background-position: right -177px;
+}
+
+/* Content style */
+
+.content-wrapper {
+	background: url(../images/content_top.jpg) no-repeat center top;
+}
+
+.content-inner-wrapper {
+	background: url(../images/content_bottom.jpg) no-repeat center bottom;
+}
+
+.content-final-wrapper {
+	background-color: #ffffff;
+	margin: 0 auto;
+	position: relative;
+	top: -110px;
+	width: 980px;
+}
